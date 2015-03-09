@@ -18,7 +18,7 @@ console.log(zip);
       console.log(weather);
       $('.temp').text('weather.temp');
       $('.city').text('weather.city');
-      $('.country').text('weather.country');
+      $('.territory').text('weather.territory');
      
     },
  
@@ -30,7 +30,7 @@ console.log(zip);
       // Get & store city
       var city = weather.city;
       // Get and store State
-      var state = weather.region;
+      var territory = weather.region;
       
       //Get and store thumbnail 
       var thumb = weather.thumbnail;
@@ -40,7 +40,7 @@ console.log(zip);
       // Output to hooks in HTML
       $('.temp').text(temp);
       $('.city').text(city);
-      $('.state').text(state);
+      $('.territory').text(territory);
       $('.thumb img').attr('src', thumb)
 
       // See console for all properties of object
